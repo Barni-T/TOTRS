@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale Of The Red Square</title>
+    <link rel="stylesheet" href="totrs.css">
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <div id="menu">
+        <h1>Tale Of The <br><i style="color: red;">Red Square</i></h1>
+        <button id="start">Start</button>
+    </div>
+    <div id="lose"><h1>You lost to the only enemy in the game!</h1><button id="menu_lose">Main Menu</button></div>
+    <div id="win"><h1>Congratulations, You win!</h1><button id="menu_win">Main Menu</button></div>
+    <div id="player_bar">
+        <div id="sword_dam">18-20 damage, 30% crit</div>
+        <div id="heal_num"><i id="heal_count"></i>/3</div>
+        <div id="bow_dam">20-22 damage, 15% crit</div>
+        <div><i id="ulti_count"></i>/100</div>
+        <button id="sword">Sword Attack</button>
+        <button id="heal">Heal</button>
+        <button id="bow">Bow Attack</button>
+        <button id="ulti">Ultimate</button>
+    </div>
+    <div id="players">
+        <div id="red_square" style="transition: 0.1s;"><i id="player_health"></i>/100</div>
+        <div id="enemy" style="transition: 0.1s;"><i id="enemy_health"></i>/350</div>
+    </div>
+    <div id="player_stats">
+        <div><i id="red_square_stat"></i><i id="enemy_dam"></i></div>
+        <div><i id="enemy_crit"></i><i id="enemy_stat"></i><i id="bleed"></i></div>
+    </div>
+    <script src="totrs.js"></script>
+</body>
+</html>
