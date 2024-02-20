@@ -35,6 +35,12 @@ menu_lose.addEventListener("click", (e) => {
     document.getElementById("red_square").style.width = "200px";
     document.getElementById("red_square").style.height = "200px";
     document.getElementById("red_square").style.fontSize = "2rem";
+    document.getElementById("heal").style.display = "block";
+    document.getElementById("heal_num").style.display = "block";
+    width = 88;
+    document.getElementById("player_bar").style.width = width+"vw";
+    heal_count = 3;
+    document.getElementById("heal_count").innerText = heal_count;
     document.getElementById("lose").style.display = "none";
     document.getElementById("menu").style.display = "block";
 })
@@ -55,6 +61,12 @@ menu_win.addEventListener("click", (e) => {
     document.getElementById("enemy").style.width = "200px";
     document.getElementById("enemy").style.height = "200px";
     document.getElementById("enemy").style.fontSize = "2rem";
+    document.getElementById("heal").style.display = "block";
+    document.getElementById("heal_num").style.display = "block";
+    width = 88;
+    document.getElementById("player_bar").style.width = width+"vw";
+    heal_count = 3;
+    document.getElementById("heal_count").innerText = heal_count;
     document.getElementById("win").style.display = "none";
     document.getElementById("menu").style.display = "block";
 })
